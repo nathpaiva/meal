@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
+import { createStore } from 'redux';
+import reducer from '../reducers';
+
+const store = createStore(reducer);
+console.log("store", store);
 
 class App extends Component {
   render() {
